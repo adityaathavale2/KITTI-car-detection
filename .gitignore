@@ -1,0 +1,25 @@
+# Dataset (large, download separately from KITTI)
+KITTI_Selected/
+
+# Model weights (download via ultralytics)
+*.pt
+
+# Output results
+results/
+
+# Output images
+*.png
+*.jpg
+
+# Explanation/annotated duplicate scripts
+*explanation*.py
+practice.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
