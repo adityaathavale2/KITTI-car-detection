@@ -1,25 +1,70 @@
-# Dataset (large, download separately from KITTI)
-KITTI_Selected/
-
-# Model weights (download via ultralytics)
-*.pt
-
-# Output results
-results/
-
-# Output images
-*.png
-*.jpg
-
-# Explanation/annotated duplicate scripts
-*explanation*.py
-practice.py
-
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ML/CV artifacts
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+runs/
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
+yolov8x.pt
+
+# KITTI dataset (not redistributed)
+KITTI_Selected/images/
+KITTI_Selected/labels/
+KITTI_Selected/calib/
+
+# Generated outputs
+results/*.csv
+results/summary.csv
+
+# Secrets and local config
+*.env
+.env.local
+secrets.json
+config.local.py
+
+# Logs
+*.log
+logs/
